@@ -1,0 +1,9 @@
+@mixin link_effect {
+        color: green;
+        &:active{
+            color: red;
+        }
+        &:hover{
+            color: blue;    
+        }
+    }
