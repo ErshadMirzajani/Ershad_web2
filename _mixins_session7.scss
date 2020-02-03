@@ -1,0 +1,30 @@
+@mixin media_s ($screen_xl:false , $screen_lg:false , $screen_md:false , $screen_sm:false , $screen_xs:false){
+     
+
+    @if $screen_xl  {
+        @media (min-width : 1200px) {
+            @content;
+        } 
+    }
+    @if $screen_lg  {
+        @media (min-width : 992px) {
+            @content;
+        } 
+    }
+    @if $screen_md  {
+        @media (min-width : 768px) {
+            @content;
+        } 
+    }
+    @if $screen_sm  {
+        @media (min-width : 576px) {
+            @content;
+        } 
+    }
+    @if $screen_xs  {
+        @media (max-width : 576px) {
+            @content;
+        } 
+    }
+
+}
